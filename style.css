@@ -1,0 +1,123 @@
+*{
+margin: 0;  /* muda a margem  */
+padding: 0;/* espaço na margem  */
+box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;/* muda a fonte de tudo  */
+    line-height: 1.6;/* da espaço entre as frases  */
+    background-color: #ffc880; /* muda a cor do site  */
+}
+nav {
+    position: fixed; /* fixou a lista no topo  */
+    top:0 ; /* ?  */
+    width:100%; /* muda o tamanho do navegador  onde ta a lista */
+    background-color: #ee9247d2;  /* muda a cor do navegador  */
+    padding: 20px 0; /* muda a largura do navegador  */
+}
+ nav ul {
+    list-style: none; /* ?  */
+display: flex;/* botou os itens da lista um do lado do outro  */
+justify-content: center;/* botou os itens da lista no meio  */
+ }
+  nav ul li {
+    margin: 0 20px; /* espaço entre os itens da lista  */
+  }
+
+  nav ul li a {
+    color: #774000; /* mudou a cor dos itens da lista  */
+    text-decoration: none; /* ?  */
+    font-size:18px;/* muda o tamanho das letras da lista  */
+    padding: 10px;/* deu espaço entre os itens da lista  */
+    transition: color 0.3s; /* ?  */
+  }
+  nav ul li a:hover {
+    color: #ff6347;/* muda a cor dos itens da lista quando clica neles  */
+    text-decoration: underline;
+  }
+   section:not(#home) {
+    padding: 100px 20px;/* mudou as imagens e as frases de lugar  */
+    text-align: center;  /* botou as imagens e as frases no centro  */
+    display: flex; /* ?  */
+    justify-content: center;  /* ?  */
+    align-items: center; /* ?  */
+    height: 100vh;  /* muda a distancia entre as imagens e texto  */
+
+   }
+
+   #home {
+/* background-color: #4A90E2;  */
+background-image:url(https://www.f3noticias.com.br/wp-content/uploads/2022/08/Exposicao-Carolina-Maria-de-Jesus-1024x683.jpg.webp);/* bota uma imagem no começo do site   */
+background-size: cover; 
+background-repeat: no-repeat;
+color:rgb(0, 0, 0);
+height: 100vh;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 1.5em;
+   }
+    
+   .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+   }
+   
+   .content img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+   }
+
+   .content .text {
+    max-width: 600px;
+    text-align: left;
+   }
+
+   .content .text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+
+   }
+   .content .text p {
+    font-size: 1.1em;
+    color: azure;
+
+   }
+
+   #services {
+    background-color: #ff6347;
+   }
+
+   #about {
+    background-color: #ff6347;
+
+   }
+
+   #contact {
+    background-color: #ff6347;
+   }
+
+   .cta-button {
+    margin-top: 30px;
+    background-color: #ff6347;
+    color: aliceblue;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor:pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   }
+   .cta-button:hover {
+    background-color: black;
+   }
